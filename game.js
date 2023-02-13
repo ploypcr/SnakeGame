@@ -15,8 +15,6 @@ window.onload = function (){
     canvas = document.getElementById("canvas");
     ctx = canvas.getContext("2d");
 
-    canvas.width = blocksize*blocksize;
-    canvas.height = blocksize*blocksize;
     document.addEventListener("keydown",changeDirection);
 
     setInterval(update, 1000/8);
